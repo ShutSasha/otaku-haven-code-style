@@ -1,6 +1,6 @@
 # Otaku Haven - Ultimate Code Style Guide 🌟
 
-Made by [Otaju Haven team](https://otaku-haven.com)
+Made by [Otaku Haven team](https://otaku-haven.com)
 
 ## Topics 🚀
 
