@@ -5,7 +5,7 @@ Made by [Otaku Haven team](https://otaku-haven.com)
 ## Topics 🚀
 
 1. [**General**](docs/general.md)
-2. [**JavaScript**](docs/javascript.md)
+2. [**JavaScript/TypeScript**](docs/javascript-typescript.md)
 3. [**React**](docs/react.md)
 4. [**NodeJS / Express**](docs/node-express.md)
 
