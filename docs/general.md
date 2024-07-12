@@ -14,7 +14,7 @@ This is a step-by-step guide designed to help you understand the basics of build
 
 ## **Naming**
 
-### File names should be in kebab-case  ✅
+### File names/folder names should be in kebab-case  ✅
 > It's about **File name**
 > It helps to name your files in much more clear way.  
 
