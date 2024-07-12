@@ -3,10 +3,13 @@
 [Return to Table of Contents](../README.md)
 
 ## Summary
-The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. 
+The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.
+
+## Decompose Commits
+
+It is recommended to decompose your work into as many small, focused commits as possible. Smaller commits are easier to read, understand, and review. They help maintain a clear and explicit commit history, which facilitates code maintenance and collaboration.
 
 ## The commit structure should be smth like this:
-
 ```
 <type>[optional scope]: <description>
  
@@ -39,35 +42,60 @@ The key function of a commit type is to describe the nature of changes made to t
     ```plaintext
     style: correct indentation in the main.js file
     ```
+    The style commit type is used for changes that do not affect the meaning or functionality of the code. These changes are purely code style and formatting changes. Examples include:
 
-5. **refactor:** A code change that neither fixes a bug nor adds a feature.
+   - Changing indentation (tabs to spaces or vice versa).
+   - Adding or removing spaces.
+   - Fixed code formatting to comply with style guidelines (for example, placing curly braces on a new line).
+   - Remove unused imports or add missing semicolons.
+
+   #### Examples
+
+   ```
+   style: fix indentation in main.js
+   style: remove unused imports
+   style: make formatting consistent with linter
+   ```
+   
+5. **chore:** Other changes that don't modify src or test files.
+    ```plaintext
+    chore: update dependencies to latest versions
+    ```
+
+    The chore commit type is used for routine tasks and changes that do not directly affect the application code or its tests. These may include changes related to settings, development tools, documentation, and other    
+    tasks that help support the project but do not change its functionality.
+   
+   #### Examples
+   ```
+   chore: update dependencies
+   chore: remove console logs from app.js
+   chore: fix typo in comments
+   chore: set up webpack configuration
+   chore: add build script
+   ```
+6. **refactor:** A code change that neither fixes a bug nor adds a feature.
     ```plaintext
     refactor: reorganize user service for better readability
     ```
 
-6. **perf:** A code change that improves performance.
+7. **perf:** A code change that improves performance.
     ```plaintext
     perf: optimize image loading for faster page render
     ```
 
-7. **test:** Adding missing tests or correcting existing tests.
+8. **test:** Adding missing tests or correcting existing tests.
     ```plaintext
     test: add unit tests for the authentication module
     ```
 
-8. **build:** Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm).
+9. **build:** Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm).
     ```plaintext
     build: update webpack configuration to improve build speed
     ```
 
-9. **ci:** Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs).
+10. **ci:** Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs).
     ```plaintext
     ci: add GitHub Actions workflow for automated testing
-    ```
-
-10. **chore:** Other changes that don't modify src or test files.
-    ```plaintext
-    chore: update dependencies to latest versions
     ```
 
 11. **revert:** Reverts a previous commit.
@@ -286,11 +314,3 @@ Fixes #789
 14. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., *docs: update ref docs*.
 15. The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
 16. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
-
-
-
-
-
-
-
-
