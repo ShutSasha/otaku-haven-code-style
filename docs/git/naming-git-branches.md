@@ -127,6 +127,11 @@ feat/add-user-authentication
 fix/login-page-crash
 ```
 
+#### wip:
+```plaintext
+wip/451/optimize-data-analysis
+```
+
 #### docs:
 ```plaintext
 docs/update-installation-guide
@@ -203,3 +208,33 @@ security/update-auth-mechanism
 ```
 
 By using these category words to name your branches, you can clearly communicate the purpose of each branch and make your project more organized and manageable.
+
+## 3. Use the ID of the issue
+
+Using the ID of the related issue in the branch name makes it easy to identify the task and keep track of its progress.
+
+### Example
+
+```plaintext
+wip/451/optimize-data-analysis
+```
+
+## 4. Avoid Using Numbers Only
+
+It’s not a good practice to name a branch by only using numbers, because it creates confusion and increases chances of making mistakes. Instead, combine ID of issues with key words for the respective task.
+
+## 5. Avoid Long Branch Names
+
+As much as the branch name needs to be informative, it also needs to be precise and short. Detailed and long names can affect readability and efficiency.
+
+## 6. Be Consistent
+
+Consistency is key. After choosing one or more conventions, stick to them throughout the project.
+
+## Summary 
+
+- Keep it short and concise, but make sure to include relevant key words.
+- Use category words to easily identify the type of the task.
+- Include ID of related issues to help tracking of progress.
+- Adding the name of the author helps to keep track of shared work. `[optional]`
+- Keep the same name conventions for the whole project.
