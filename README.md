@@ -8,7 +8,7 @@ Made by [Otaku Haven team](https://otaku-haven.com)
 2. [**JavaScript/TypeScript**](docs/javascript-typescript.md)
 3. [**React**](docs/react.md)
 4. [**NodeJS / Express**](docs/node-express.md)
-5. [**Conventional commits**](docs/conventional-commits.md)
+5. [**Conventional commits**](docs/git/conventional-commits.md)
 
 ## Features / components 🔥
 
